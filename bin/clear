@@ -1,0 +1,8 @@
+#! /usr/bin/python3
+import os
+import time
+HOME = os.environ['HOME']
+#os.system('/usr/bin/clear')
+time.sleep(0.1)
+print( open('{HOME}/kawaii-term/asciiarts/akagi.ascii'.format(HOME=HOME)).read() )
+

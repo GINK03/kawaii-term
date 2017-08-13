@@ -3,6 +3,12 @@
 ### KAWAII-TERMINAL!
 ### .bashrcの最後尾に追加してください
 export TERM=xterm-256color
+A_1=$HOME/kawaii-term/asciiarts/sigure.ansi                                                                                                                     
+cat $AA_1 
+### override custom command.
+### 標準コマンドは可愛くないので細工を入れたりする
+export PATH=$HOME/kawaii-term/bin:$PATH
+
 FREE_MEM()
 {
    python3 $HOME/kawaii-term/kawaii-term.py --mem
