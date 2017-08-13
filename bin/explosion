@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+import os
+import sys
+import glob
+import time
+import shutil
+
+HOME = os.environ['HOME']
+PWD = os.environ['PWD']
+target = sys.argv[1]
+
+# めぐみんを出力して全部中身を消す
+print( open('{HOME}/kawaii-term/asciiarts/megumin.ascii'.format(HOME=HOME)).read() )
+
+print( '詠唱を開始します' )
+start = time.time()
+files = glob.glob('{}/{}'.format(PWD, target))
+length = len( files )
+print( '詠唱を完了しました！{}[sec]'.format( int( time.time() - start) ) )
+
+for e, name in enumerate(files):
+  if e%500 == 0:
+    print('now iter {} / {}'.format(e, length) )
+  try:
+    os.remove( name )
+  except Exception as e:
+    try:
+      shutil.rmtree( name )
+      ...
+    except Exception as e:
+      print( e )
+      ...
+print( '爆破完了!!' )
+
