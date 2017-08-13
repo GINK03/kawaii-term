@@ -13,8 +13,10 @@ import sys
 from multiprocessing import Process
 
 ok = None
+
+home = os.environ['HOME']
 # check the exists of recent prediction
-with open('async/weather.txt','r') as f:
+with open('{home}/kawaii-term/async/weather.txt'.format(home=home),'r') as f:
   line = None
   for line in f:
     ...
@@ -36,7 +38,7 @@ def async_update():
   obj = json.loads( raw )
   desc = obj['weather'][0]['description']
   save = '___'.join( map(str,[int(time.time()), desc] ) )
-  os.system('echo {save} >> async/weather.txt'.format( save=save ) )
+  os.system('echo {save} >> {home}/kawaii-term/async/weather.txt'.format( save=save, home=home ) )
 
 if ok is not None: 
   p = Process(target=async_update, args=())
