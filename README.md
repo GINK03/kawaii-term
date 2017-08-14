@@ -1,5 +1,6 @@
 # What About Kawaii-Term
-kawaii-termは主にエンジニアに対して適切に精神的な癒しを与えることで、ストレスを低減するものです.
+kawaii-termは主にエンジニアに対して適切に精神的な癒しを与えることで、ストレスを低減するものです.  
+この世界が可愛ければ戦争は無くなるのに  
 
 ## 機能一覧
 - 任意の文字列の表示
@@ -50,4 +51,13 @@ $ cd kawaii-term
 $ cat templte.bashrc  >> ~/.bashrc
 ```
 
+## 画面イメージ
+<p align="center">
+  <img width="600px" src="https://user-images.githubusercontent.com/4949982/29257316-e892855e-80eb-11e7-808f-cf755b147aba.png">
+</p>
+<div align="center"> 図1. ログイン時にスプラッシュでアスキーアートが流れます </div>
+
+
+## 画面イメージ1
+## 画面イメージすp
 ## 画面イメージ
