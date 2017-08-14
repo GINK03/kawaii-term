@@ -46,7 +46,7 @@ HOMEディレクトリにこのプロジェクトをgit cloneで配置する必�
 ```console
 $ git clone https://github.com/GINK03/kawaii-term
 ```
-template.bashrcを~/.bashrcに追加します（アップデート時は計算時間が無駄にならないように適切に、軽くしてください）
+template.bashrcを~/.bashrcに追加します（アップデート時は計算時間が無駄にならないように適切に、重複等を消すなどして、軽くしてください）
 ```
 $ cd kawaii-term
 $ cat templte.bashrc  >> ~/.bashrc
@@ -98,3 +98,7 @@ $ clear
 $ explosion target/*
 ```
 めぐみんというキャラクタのAAをみることができます
+<p align="center">
+  <img width="100%" src="https://user-images.githubusercontent.com/4949982/29261528-f37e936c-810a-11e7-8a6c-da1033d001b9.png">
+</p>
+<div aling="center">図4. めぐみん</div>
