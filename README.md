@@ -85,4 +85,7 @@ clearはバッファがおかしくなった時にリセットをしますが、
 ```console
 $ clear
 ```
-
+<p align="center">
+  <img width="100%" src="https://user-images.githubusercontent.com/4949982/29261225-7343450e-8109-11e7-9a45-9363fa536971.png">
+</p>
+<div aling="center">図3. clearを押すと、比較的大きなAAが表示され、結果としてカーソルが下の方にくる</div>
