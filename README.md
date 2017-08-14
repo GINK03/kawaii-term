@@ -118,5 +118,16 @@ kawaii-term/weather.pyを編集して、中のAPIキーを変えてください
   raw = os.popen('curl -s "http://api.openweathermap.org/data/2.5/weather?q=${YOUR_CITY}&appid=${YOUT_API}"').read()
 ```
 
+## 左のプロンプトと右のプロンプトの幅について
+自動で幅を計算してたのですが、tmux経由で使用すると微妙にずれるので、ハードコードしました　　
+
+お使いのディスプレイによっては適切に表示されないかもしれません　　
+template.bashrcの$YOUR_WIDTHを任意の値にしてみてください　　
+```bash
+RIGHT_PRONPT() {
+  # パディング幅を%*s ${COLUMNS}で指定できるが、tmux経由だと、よく破綻しているので、ハードコードでもいいかもしれない
+  printf "%*s" {{$YOUR_WIDTH}} "$(tput setaf 199)$(tput bold)$(CPU_USAGE)$(tput sgr0) $(tput setaf 2)$(DISK_USAGE) $(tput setaf 123)[TENKI:$(GET_WEATHER)]$(tput sgr0)"
+}
+```
 ## ライセンス
 WTFPL (Do What The Fuck You Want To Public License)
