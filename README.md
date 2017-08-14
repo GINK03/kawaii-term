@@ -56,8 +56,3 @@ $ cat templte.bashrc  >> ~/.bashrc
   <img width="600px" src="https://user-images.githubusercontent.com/4949982/29257316-e892855e-80eb-11e7-808f-cf755b147aba.png">
 </p>
 <div align="center"> 図1. ログイン時にスプラッシュでアスキーアートが流れます </div>
-
-
-## 画面イメージ1
-## 画面イメージすp
-## 画面イメージ
