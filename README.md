@@ -63,3 +63,22 @@ template.bashrcのPS１というところを編集することで、ターミナ
   <img width="100%" src="https://user-images.githubusercontent.com/4949982/29258004-3d5d9196-80f1-11e7-9544-ce940548b359.png">
 </p>
 <div align="center"> 図2. 項目の入れ替えはPS1を編集することで行えます  </div>
+
+## 標準コマンドのオーバーライド
+いくつかのコマンドにて、機能を上書きしたり、追加したりして任意の動作をさせています  
+- ls (l -CFにエイリアスされています)
+- clear
+- explosion
+
+### ls
+lだけで入力できるようにしています
+```console
+$ l
+はわわ〜〜〜！💦
+22/  cuda/  go/  keras-skip-though-vector/  metas/  td2.pem   テンプレート/  ビデオ/  公開/
+NVIDIA_CUDA-8.0_Samples/  cudnn-8.0-linux-x64-v5.1.tgz  go1.8.3.linux-amd64.tar.gz  keras-unstructured-data  minimize.zip  v/
+aws/  examples.desktop  kawaii-term/  kotlin-headlessbrowser-selenium-jsoup-parser/  sdb/
+```
+　### clear
+ clearはバッファがおかしくなった時にリセットをしますが、上の方にカーソルが行ってしまい、視線を動かす必要があるので、
+
