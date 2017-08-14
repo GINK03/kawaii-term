@@ -107,8 +107,14 @@ $ explosion target/*
 openweathermap.orgの無料プランを用いています  
 サンプルに私のAPIキーがバンドルされていますが、無料で利用できるので、適切にご自身のAPIキーに書き換えてください（私がバンされてしまいます）  
 kawaii-term/weather.pyを編集して、中のAPIキーを変えてください  
-また、お住いの都市にURLを書き換えるので、予想する都市部を便利な箇所に変えてご利用ください  
+また、お住いの都市にURLを書き換えるので、予想する都市部を便利な箇所に変えてご利用ください  
+これを、
+```python
+  raw = os.popen('curl -s "http://api.openweathermap.org/data/2.5/weather?q=Tokoy,jp&appid=1e240e732347c23472274dc188cd39d6"').read()
 ```
+このようにします
+```python
+  raw = os.popen('curl -s "http://api.openweathermap.org/data/2.5/weather?q=${YOUR_CITY}&appid=${YOUT_API}"').read()
 ```
 
 ## ライセンス
