@@ -79,6 +79,10 @@ $ l
 NVIDIA_CUDA-8.0_Samples/  cudnn-8.0-linux-x64-v5.1.tgz  go1.8.3.linux-amd64.tar.gz  keras-unstructured-data  minimize.zip  v/
 aws/  examples.desktop  kawaii-term/  kotlin-headlessbrowser-selenium-jsoup-parser/  sdb/
 ```
-　### clear
- clearはバッファがおかしくなった時にリセットをしますが、上の方にカーソルが行ってしまい、視線を動かす必要があるので、
+
+### clear
+clearはバッファがおかしくなった時にリセットをしますが、上の方にカーソルが行ってしまい、視線を動かす必要があるので、アスキーアートを前方に投入することで、カーソルの場所の調整を行います  
+```console
+$ clear
+```
 
