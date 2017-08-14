@@ -103,5 +103,13 @@ $ explosion target/*
 </p>
 <div align="center">図4. めぐみん</div>  
 
+## terminal中の天気に関して
+openweathermap.orgの無料プランを用いています  
+サンプルに私のAPIキーがバンドルされていますが、無料で利用できるので、適切にご自身のAPIキーに書き換えてください（私がバンされてしまいます）  
+kawaii-term/weather.pyを編集して、中のAPIキーを変えてください  
+また、お住いの都市にURLを書き換えるので、予想する都市部を便利な箇所に変えてご利用ください  
+```
+```
+
 ## ライセンス
 WTFPL (Do What The Fuck You Want To Public License)
