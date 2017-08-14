@@ -122,6 +122,7 @@ kawaii-term/weather.pyを編集して、中のAPIキーを変えてください
 自動で幅を計算してたのですが、tmux経由で使用すると微妙にずれるので、ハードコードしました　　
 
 お使いのディスプレイによっては適切に表示されないかもしれません　　
+
 template.bashrcの$YOUR_WIDTHを任意の値にしてみてください　　
 ```bash
 RIGHT_PRONPT() {
