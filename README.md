@@ -89,3 +89,12 @@ $ clear
   <img width="100%" src="https://user-images.githubusercontent.com/4949982/29261225-7343450e-8109-11e7-9a45-9363fa536971.png">
 </p>
 <div aling="center">図3. clearを押すと、比較的大きなAAが表示され、結果としてカーソルが下の方にくる</div>
+
+### explosion(ex)
+ビッグデータなどを扱い、大きなデータセットを消そうとすると、rmコマンドでは消せません  
+そこでexplosionという長めのコマンドで、警告なしで、OSがファイルとして認識できるのであれば、問題なく消せるコマンドを新たに追加します  
+(無警告なので、注意してください)  
+```console
+$ explosion target/*
+```
+めぐみんというキャラクタのAAをみることができます
