@@ -58,7 +58,7 @@ $ cat templte.bashrc  >> ~/.bashrc
 </p>
 <div align="center"> 図1. ログイン時にスプラッシュでアスキーアートが流れます </div>
 
-template.bashrcのPS１というところを編集することで、ターミナルのテキストや詳細は変更できますが、デフォルトではこのような感じです
+template.bashrcのPS1というところを編集することで、ターミナルのテキストや詳細は変更できますが、デフォルトではこのような感じです
 <p align="center">
   <img width="100%" src="https://user-images.githubusercontent.com/4949982/29258004-3d5d9196-80f1-11e7-9544-ce940548b359.png">
 </p>
