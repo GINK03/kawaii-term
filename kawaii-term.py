@@ -25,7 +25,22 @@ if '--disk' in sys.argv:
   keys = re.split(r'\s{1,}', buff[0])
   vals = re.split(r'\s{1,}', list( filter(lambda x:len(x) != 0 and x[-1] == '/', buff[1:]) )[0] )
   obj  = dict(zip( keys, vals) )
-  use  = obj['Use%']
-  free = obj['Avail']
+  try:
+    use  = obj['Use%']
+  except KeyError:
+    try:
+      use = obj['使用']
+    except KeyError:
+      use = 'NaN'
+
+    
+  try:
+    free = obj['Avail']
+  except KeyError:
+    try:
+      free = obj['残り']
+    except KeyError:
+      free = 'NaN'
+
   result = 'DiskUse%={}, DiskAvail={}'.format(use, free)
   print(result)
